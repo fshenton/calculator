@@ -10,39 +10,40 @@
 		<h1>FRANK'S INCREDIBLE CALCULATOR</h1>
 	</header>
 	<!--Big container representing the calculator-->
-	<form id="calculatorbody">
-		<!--Will want some styling around the screen-->
-		<output id="calculatorscreen"></output>
-		<grid id="buttongrid">
+	<article id="wrapper">
+		<form id="calculatorbody">
+			<!--Will want some styling around the screen-->
+			<output id="calculatorscreen"></output>
 			<!--two of these buttons are unlike the others-->
 			<!--power button is red, and the + button is 2 rows tall-->
-			<button>MRC</button>
-			<button>M-</button>
-			<button>M+</button>
-			<button>%</button>
-			<button id="powerbutton">ON/C</button>
-			<button>7</button>
-			<button>8</button>
-			<button>9</button>
-			<button>sqrt</button>
-			<button>^</button>
-			<button>4</button>
-			<button>5</button>
-			<button>6</button>
-			<button>-</button>
-			<button>/</button>
-			<button>1</button>
-			<button>2</button>
-			<button>3</button>
-			<button id="plusbutton">+</button>
-			<button>*</button>
-			<button>0</button>
-			<button>.</button>
-			<button>+/-</button>
-			<button>=</button>
-		</grid>
-	</form>
-	<!--Digital screen-->
-	<!--Buttons-->
+			<div id="buttongrid">
+				<!--so many buttons!-->
+				<button id="mrcbutton">MRC</button>
+				<button id="memminusbutton">M-</button>
+				<button id="memplusbutton">M+</button>
+				<button id="percentbutton">%</button>
+				<button id="powerbutton">ON/C</button>
+				<button id="sevenbutton">7</button>
+				<button id="eightbutton">8</button>
+				<button id="ninebutton">9</button>
+				<button id="sqrtbutton">sqrt</button>
+				<button id="indicebutton">^</button>
+				<button id="fourbutton">4</button>
+				<button id="fivebutton">5</button>
+				<button id="sixbutton">6</button>
+				<button id="subtractbutton">-</button>
+				<button id="dividebutton">/</button>
+				<button id="onebutton">1</button>
+				<button id="twobutton">2</button>
+				<button id="threebutton">3</button>
+				<button id="addbutton">+</button>
+				<button id="multiplybutton">*</button>
+				<button id="zerobutton">0</button>
+				<button id="decimalbutton">.</button>
+				<button id="plusminusbutton">+/-</button>
+				<button id="equalsbutton">=</button>
+			</div>
+		</form>
+	</article>
 </body>
 </html>

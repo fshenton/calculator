@@ -6,5 +6,140 @@
 }
 
 html{
-	
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+header{
+	text-align: center;
+}
+
+#wrapper{
+	display: flex;
+	justify-content: center;
+}
+
+#calculatorbody{
+	display: block;
+	position: absolute;
+	width: 550px;
+	height: 800px;
+	background-color: #222222;
+}
+
+#calculatorscreen{
+	display: flex; 
+	position: relative;
+	left: 25px;
+	top: 25px;
+	justify-content: flex-end;
+	align-items: center;
+	font-family: consolas;
+	width: 500px;
+	height: 200px;
+	background-color: black;
+	color: white;
+	font-size: 10rem;
+}
+
+#buttongrid{
+	display: grid;
+	position: relative;
+	left: 25px;
+	top: 50px;
+	width: 500px;
+	height: 500px;
+	grid-template-areas: 
+	"mrc memminus memplus perc power"
+	"seven eight nine sqrt indice"
+	"four five six subtract divide"
+	"one two three add multiply"
+	"zero decimal plusminus add equals";
+}
+
+#buttongrid>button{
+	font-size: 2rem;
+	border: 1px solid;
+}
+
+	#buttongrid>button:hover{
+		/* font-size: 1.8rem; */
+		background-color: #444444;
+		border: 1px solid white;
+		outline: 3px blue;
+	}
+
+#mrcbutton{
+	grid-area: mrc;
+}
+#memminusbutton{
+	grid-area: memminus;
+}
+
+#memplusbutton{
+	grid-area: memplus;
+}
+#percentbutton{
+	grid-area: perc;
+}
+#powerbutton{
+	grid-area: power;
+	background-color: red;
+}
+#sevenbutton{
+	grid-area: seven;
+}
+#eightbutton{
+	grid-area: eight;
+}
+#ninebutton{
+	grid-area: nine;
+}
+#sqrtbutton{
+	grid-area: sqrt;
+}
+#indicebutton{
+	grid-area: indice;
+}
+#fourbutton{
+	grid-area: four;
+}
+#fivebutton{
+	grid-area: five;
+}
+#sixbutton{
+	grid-area: six;
+}
+#subtractbutton{
+	grid-area: subtract;
+}
+#dividebutton{
+	grid-area: divide;
+}
+#onebutton{
+	grid-area: one;
+}
+#twobutton{
+	grid-area: two;
+}
+#threebutton{
+	grid-area: three;
+}
+#addbutton{
+	grid-area: add;
+}
+#multiplybutton{
+	grid-area: multiply;
+}
+#zerobutton{
+	grid-area: zero;
+}
+#decimalbutton{
+	grid-area: decimal;
+}
+#plusminusbutton{
+	grid-area: plusminus;
+}
+#equalsbutton{
+	grid-area: equals;
 }
