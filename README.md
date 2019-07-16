@@ -1,5 +1,22 @@
-# calculator
+# CALCULATOR #
 
-In this project, I will be attempting to make a web-based calculator using HTML, CSS and JS.
+Live link: https://fshenton.github.io/calculator/
 
-I'm very rusty so expect some janky looking code while I shake off the cobwebs :)
+Features:
+- Power/clear button
+- Add
+- Subtract
+- Multiply
+- Divide
+- Square root
+- Indices 
+- Negative numbers
+- Decimal places
+- Stretch goals: MRC, M- and M+ functions
+
+Written with HTML, CSS and JS.
+
+To run the project:
+- Clone the repository
+- Open index.html
+
