@@ -1,3 +1,20 @@
+
+/* parent-imposed, 
+Display, 
+box model, 
+positions, 
+alignments, 
+transforms, 
+colours, 
+filters, 
+animations, 
+transitions */
+
+@font-face{
+	font-family: "digital7";
+	src: url("assets/fonts/digital-7 (mono).ttf");
+}
+
 html{
 	font-size: 20px;
 	font-family: sans-serif;
@@ -25,19 +42,25 @@ h1{
 	background-color: #222222;
 }
 
-#screen{
+/* this selector is equivalent to using class selector, 
+allowing id style to be overwritten by class style */
+[id="screen"]{
 	display: flex; 
 	position: relative;
 	left: 25px;
 	top: 25px;
 	justify-content: flex-end;
 	align-items: center;
-	font-family: consolas;
+	font-family: digital7, sans-serif;
 	width: 500px;
 	height: 200px;
-	background-color: #555555;
-	color: white;
+	background-color: #4a6053;
+	color: black;
 	font-size: 10rem;
+}
+
+.powered{
+	background-color: #6c8275; 
 }
 
 /* BUTTONS */
