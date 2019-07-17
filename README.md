@@ -20,3 +20,4 @@ To run the project:
 - Clone the repository
 - Open index.html
 
+![calculator](assets/images/calculator.jpg)
