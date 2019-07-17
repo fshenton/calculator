@@ -40,6 +40,7 @@ h1{
 	width: 550px;
 	height: 800px;
 	background-color: #222222;
+	border-radius: 15px;
 }
 
 /* this selector is equivalent to using class selector, 
@@ -74,7 +75,7 @@ allowing id style to be overwritten by class style */
 	width: 500px;
 	height: 500px;
 	grid-template-areas: 	"mrc   memminus memplus   perc     power"
-						 	"seven eight    nine      sqrt     indice"
+						 	"seven eight    nine      sqrt     index"
 							"four  five     six       subtract divide"
 							"one   two      three     add      multiply"
 							"zero  decimal  plusminus add      equals";
@@ -167,8 +168,8 @@ allowing id style to be overwritten by class style */
 	grid-area: sqrt;
 }
 
-.indice{
-	grid-area: indice;
+.index{
+	grid-area: index;
 }
 
 .mrc{
