@@ -52,6 +52,7 @@ allowing id style to be overwritten by class style */
 	justify-content: flex-end;
 	align-items: center;
 	font-family: digital7, sans-serif;
+	padding-right: 3%;
 	width: 500px;
 	height: 200px;
 	background-color: #4a6053;

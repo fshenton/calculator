@@ -9,7 +9,7 @@ Features:
 - Multiply
 - Divide
 - Square root
-- Indices 
+- Index 
 - Negative numbers
 - Decimal places
 - Stretch goals: MRC, M- and M+ functions
