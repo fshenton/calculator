@@ -3,24 +3,23 @@ html{
 	font-family: sans-serif;
 }
 
-header{
-	text-align: center;
-}
-
 #wrapper{
 	display: flex;
 	justify-content: center;
 }
 
-#calculatorbody{
-	display: block;
-	position: absolute;
+#wrapper>header{
+	text-align: center;
+	width: 100%;
+}
+
+#calculator{
 	width: 550px;
 	height: 800px;
 	background-color: #222222;
 }
 
-#calculatorscreen{
+#screen{
 	display: flex; 
 	position: relative;
 	left: 25px;
@@ -35,104 +34,129 @@ header{
 	font-size: 10rem;
 }
 
-#buttongrid{
+/* BUTTONS */
+
+#buttons{
 	display: grid;
 	position: relative;
 	left: 25px;
 	top: 50px;
 	width: 500px;
 	height: 500px;
-	grid-template-areas: 
-	"mrc memminus memplus perc power"
-	"seven eight nine sqrt indice"
-	"four five six subtract divide"
-	"one two three add multiply"
-	"zero decimal plusminus add equals";
+	grid-template-areas: 	"mrc   memminus memplus   perc     power"
+						 	"seven eight    nine      sqrt     indice"
+							"four  five     six       subtract divide"
+							"one   two      three     add      multiply"
+							"zero  decimal  plusminus add      equals";
 }
 
-#buttongrid>button{
+#buttons>button{
 	font-size: 2rem;
 	border: 1px solid;
 }
 
-	#buttongrid>button:hover{
-		/* font-size: 1.8rem; */
+	#buttons>button:hover{
 		background-color: #AAAAAA;
 		border: 1px solid white;
 		outline: 3px blue;
 	}
 
-#mrcbutton{
-	grid-area: mrc;
-}
-#memminusbutton{
-	grid-area: memminus;
-}
 
-#memplusbutton{
-	grid-area: memplus;
-}
-#percentbutton{
-	grid-area: perc;
-}
-#powerbutton{
+.power{
 	grid-area: power;
 	background-color: red;
 }
-#sevenbutton{
-	grid-area: seven;
-}
-#eightbutton{
-	grid-area: eight;
-}
-#ninebutton{
-	grid-area: nine;
-}
-#sqrtbutton{
-	grid-area: sqrt;
-}
-#indicebutton{
-	grid-area: indice;
-}
-#fourbutton{
-	grid-area: four;
-}
-#fivebutton{
-	grid-area: five;
-}
-#sixbutton{
-	grid-area: six;
-}
-#subtractbutton{
-	grid-area: subtract;
-}
-#dividebutton{
-	grid-area: divide;
-}
-#onebutton{
+
+/* NUMBERS */
+
+.one{
 	grid-area: one;
 }
-#twobutton{
+
+.two{
 	grid-area: two;
 }
-#threebutton{
+
+.three{
 	grid-area: three;
 }
-#addbutton{
-	grid-area: add;
+
+.four{
+	grid-area: four;
 }
-#multiplybutton{
-	grid-area: multiply;
+
+.five{
+	grid-area: five;
 }
-#zerobutton{
+
+.six{
+	grid-area: six;
+}
+
+.seven{
+	grid-area: seven;
+}
+
+.eight{
+	grid-area: eight;
+}
+
+.nine{
+	grid-area: nine;
+}
+
+.zero{
 	grid-area: zero;
 }
-#decimalbutton{
+
+/* OPERATIONS */
+
+.subtract{
+	grid-area: subtract;
+}
+
+.divide{
+	grid-area: divide;
+}
+
+.add{
+	grid-area: add;
+}
+
+.multiply{
+	grid-area: multiply;
+}
+
+.equals{
+	grid-area: equals;
+}
+
+.sqrt{
+	grid-area: sqrt;
+}
+
+.indice{
+	grid-area: indice;
+}
+
+.mrc{
+	grid-area: mrc;
+}
+.memminus{
+	grid-area: memminus;
+}
+
+.memplus{
+	grid-area: memplus;
+}
+.percent{
+	grid-area: perc;
+}
+
+.decimal{
 	grid-area: decimal;
 }
-#plusminusbutton{
+
+.plusminus{
 	grid-area: plusminus;
-}
-#equalsbutton{
-	grid-area: equals;
 }

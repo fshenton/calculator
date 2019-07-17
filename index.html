@@ -4,48 +4,155 @@
 	<title>Frank's Incredible Calculator</title>
 	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="calculator.js"></script>
 </head>
 <body>
-	<header>
-		<h1>FRANK'S INCREDIBLE CALCULATOR</h1>
-	</header>
 	<!--Big container representing the calculator-->
 	<article id="wrapper">
-		<form id="calculatorbody">
+		<header>
+			<h1>FRANK'S INCREDIBLE CALCULATOR</h1>
+		</header>
+		<form id="calculator">
 			<!--Will want some styling around the screen-->
-			<output id="calculatorscreen"></output>
+			<output id="screen"></output>
 			<!--two of these buttons are unlike the others-->
 			<!--power button is red, and the + button is 2 rows tall-->
-			<div id="buttongrid">
-				<!--so many buttons!-->
-				<button id="mrcbutton">MRC</button>
-				<button id="memminusbutton">M-</button>
-				<button id="memplusbutton">M+</button>
-				<button id="percentbutton">%</button>
-				<button id="powerbutton">ON/C</button>
-				<button id="sevenbutton">7</button>
-				<button id="eightbutton">8</button>
-				<button id="ninebutton">9</button>
-				<button id="sqrtbutton">sqrt</button>
-				<button id="indicebutton">^</button>
-				<button id="fourbutton">4</button>
-				<button id="fivebutton">5</button>
-				<button id="sixbutton">6</button>
-				<button id="subtractbutton">-</button>
-				<button id="dividebutton">/</button>
-				<button id="onebutton">1</button>
-				<button id="twobutton">2</button>
-				<button id="threebutton">3</button>
-				<button id="addbutton">+</button>
-				<button id="multiplybutton">*</button>
-				<button id="zerobutton">0</button>
-				<button id="decimalbutton">.</button>
-				<button id="plusminusbutton">+/-</button>
-				<button id="equalsbutton">=</button>
+			<div id="buttons">
+				
+				<button 
+					class="power button">
+					ON/C
+				</button>
+
+				<button 
+					class="number button one"
+					data-value="1">
+					1
+				</button>
+
+				<button 
+					class="number button two"
+					data-value="2">
+					2
+				</button>
+
+				<button 
+					class="number button three"
+					data-value="3">
+					3
+				</button>
+
+				<button 
+					class="number button four"
+					data-value="4">
+					4
+				</button>
+
+				<button 
+					class="number button five"
+					data-value="5">
+					5
+				</button>
+
+				<button 
+					class="number button six"
+					data-value="6">
+					6
+				</button>
+
+				<button 
+					class="number button seven"
+					data-value="7">
+					7
+				</button>
+
+				<button 
+					class="number button eight"
+					data-value="8">
+					8
+				</button>
+
+				<button 
+					class="number button nine"
+					data-value="9">
+					9
+				</button>
+
+				<button 
+					class="number button zero"
+					data-value="0">
+					0
+				</button>
+
+				<button 
+					class="button subtract">
+					-
+				</button>
+
+				<button 
+					class="button divide">
+					/
+				</button>
+
+				<button 
+					class="button add">
+					+
+				</button>
+
+				<button 
+					class="button multiply">
+					*
+				</button>
+
+				<button 
+					class="button quals">
+					=
+				</button>
+
+				<button 
+					class="button sqrt">
+					sqrt
+				</button>
+
+				<button 
+					class="button indice">
+					^
+				</button>
+
+				<button 
+					class="button mrc">
+					MRC
+				</button>
+
+				<button 
+					class="button memminus">
+					M-
+				</button>
+
+				<button 
+					class="button memplus">
+					M+
+				</button>
+
+				<button 
+					class="button percent">
+					%
+				</button>
+
+				<button 
+					class="button decimal">
+					.
+				</button>
+
+				<button 
+					class="buttons plusminus">
+					+/-
+				</button>
+				
 			</div>
 		</form>
 	</article>
 
-	<script src="calculator.js"></script>
+
 </body>
 </html>
