@@ -5,12 +5,18 @@ html{
 
 #wrapper{
 	display: flex;
-	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 #wrapper>header{
-	text-align: center;
-	width: 100%;
+	display: flex;
+	align-items: center;
+	height: 4rem;
+}
+
+h1{
+	font-size: 2rem;
 }
 
 #calculator{
@@ -48,6 +54,8 @@ html{
 							"four  five     six       subtract divide"
 							"one   two      three     add      multiply"
 							"zero  decimal  plusminus add      equals";
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 5px;
 }
 
 #buttons>button{
