@@ -7,6 +7,7 @@ function init(){
 
 	const powerButton = document.getElementsByClassName("power button");
 	const numberButtons = document.getElementsByClassName("number button");
+	const operatorButtons = document.getElementsByClassName("operator button");
 	const screen = document.getElementById("screen");
 	const powered = "powered";
 
@@ -15,6 +16,11 @@ function init(){
 	//add a click event listener to every number-button
 	for(button of numberButtons){
 		button.addEventListener("click", addNumberToScreen);
+	}
+
+	//add a click event listener to every operator-button
+	for(button of operatorButtons){
+		button.addEventListener("click", addOperatorToScreen);
 	}
 
 
@@ -67,6 +73,23 @@ function init(){
 
 	}// addNumberToScreen
 
+	function addBasicOperatorsToScreen(event){
+		event.preventDefault();
+
+		if(screen.classList.contains(powered)){
+			
+			const button 						= event.target;
+			const { innerText : operator } 		= button;
+			const { innerText : currentValue } 	= screen;
+
+			let newScreenValue = currentValue;
+
+			newScreenValue += operator;
+
+			//need to handle cases where last char in currentValue is also an operator
+			screen.innerText = newScreenValue;
+		}
+	}
 
 	function add(num1, num2){
 
