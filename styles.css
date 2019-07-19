@@ -20,6 +20,10 @@ html{
 	font-family: sans-serif;
 }
 
+body{
+	background-color: #b6e5fa;
+}
+
 #wrapper{
 	display: flex;
 	align-items: center;
@@ -89,15 +93,20 @@ allowing id style to be overwritten by class style */
 }
 
 	#buttons>button:hover{
-		border: 1px solid white;
-		outline: 3px blue;
-		background-color: #AAAAAA;
+		background-color: #CCCCCC;
 	}
 
+	#buttons>button:active{
+		transform: scale(0.98);
+	}
 
 .power{
 	grid-area: power;
 	background-color: red;
+}
+
+.power:hover{
+	background-color: #dd0000;
 }
 
 /* NUMBERS */
